@@ -516,7 +516,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< HEAD
 --- !u!1001 &310970938
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -612,8 +611,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 310970938}
   m_PrefabAsset: {fileID: 0}
-=======
->>>>>>> 97941f0313d2fd44db0829ff6de160d13c2351c2
 --- !u!1 &352052344
 GameObject:
   m_ObjectHideFlags: 0
@@ -643,20 +640,12 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
-<<<<<<< HEAD
   - {fileID: 310970939}
-=======
-  - {fileID: 1608572472}
->>>>>>> 97941f0313d2fd44db0829ff6de160d13c2351c2
   - {fileID: 1735142561}
   - {fileID: 1630900799}
   - {fileID: 1156838219}
   - {fileID: 1390058863}
-<<<<<<< HEAD
   - {fileID: 1759369145}
-=======
-  - {fileID: 955182348}
->>>>>>> 97941f0313d2fd44db0829ff6de160d13c2351c2
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &362118615
