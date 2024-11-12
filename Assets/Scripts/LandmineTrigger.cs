@@ -9,9 +9,12 @@ public class CollisionExplosion : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        // Spawn explosion at current position and rotation
+        // Spawn explosion visual effect at current position and rotation
         Instantiate(explosionPrefab, transform.position, transform.rotation);
-        
+
+        // Play the explosion sound through the ExplosionManager
+        ExplosionManager.Instance.PlayExplosionSound(transform.position);
+
         // Start coroutine to handle explosion and reload the scene
         StartCoroutine(HandleExplosionAndReload());
     }
@@ -20,7 +23,7 @@ public class CollisionExplosion : MonoBehaviour
     private IEnumerator HandleExplosionAndReload()
     {
         yield return new WaitForSeconds(reloadDelay); // Wait for the specified delay
-        
+
         // Reload the current scene
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
