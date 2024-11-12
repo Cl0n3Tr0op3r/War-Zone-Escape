@@ -12,11 +12,16 @@ public class PlayerControl : MonoBehaviour
     public Rigidbody rb;
     public SpriteRenderer sr;
 
+    public AudioSource audioSource;  // Reference to the AudioSource component
+    public AudioClip walkingSound;   // Walking sound clip
+    private bool isWalking = false;  // Whether the player is moving
+
     // Start is called before the first frame update
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody>();
         sr = gameObject.GetComponent<SpriteRenderer>();
+        audioSource = gameObject.GetComponent<AudioSource>();  // Get the AudioSource component
     }
 
     // Update is called once per frame
@@ -46,6 +51,23 @@ public class PlayerControl : MonoBehaviour
         else if (x != 0 && x > 0)
         {
             sr.flipX = false;
+        }
+
+        // Check if the player is moving
+        bool isMoving = (x != 0 || y != 0);
+
+        // Play walking sound if the player is moving and the sound isn't already playing
+        if (isMoving && !isWalking)
+        {
+            isWalking = true;
+            audioSource.clip = walkingSound;
+            audioSource.Play();
+        }
+        // Stop walking sound if the player is not moving
+        else if (!isMoving && isWalking)
+        {
+            isWalking = false;
+            audioSource.Stop();
         }
     }
 }
