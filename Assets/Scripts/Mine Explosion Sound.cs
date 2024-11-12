@@ -4,8 +4,10 @@ public class ExplosionManager : MonoBehaviour
 {
     public static ExplosionManager Instance; // Singleton instance
     public AudioClip explosionSound; // Assign the explosion sound in the Inspector
+    public AudioClip additionalSound; // Assign the additional sound in the Inspector
 
-    private AudioSource audioSource;
+    private AudioSource explosionAudioSource;
+    private AudioSource additionalAudioSource;
 
     private void Awake()
     {
@@ -21,16 +23,23 @@ public class ExplosionManager : MonoBehaviour
             return;
         }
 
-        // Set up the AudioSource component
-        audioSource = gameObject.AddComponent<AudioSource>();
-        audioSource.clip = explosionSound;
-        audioSource.playOnAwake = false; // Don't play automatically
+        // Set up the AudioSource components
+        explosionAudioSource = gameObject.AddComponent<AudioSource>();
+        explosionAudioSource.clip = explosionSound;
+        explosionAudioSource.playOnAwake = false;
+
+        additionalAudioSource = gameObject.AddComponent<AudioSource>();
+        additionalAudioSource.clip = additionalSound;
+        additionalAudioSource.playOnAwake = false;
     }
 
     public void PlayExplosionSound(Vector3 position)
     {
-        // Move the manager to the explosion location and play sound
+        // Move the manager to the explosion location
         transform.position = position;
-        audioSource.Play();
+
+        // Play both sounds simultaneously
+        explosionAudioSource.Play();
+        additionalAudioSource.Play();
     }
 }
