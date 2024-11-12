@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene("LoadingScene");
+        SceneManager.LoadScene("Start Cutscene");
     }
     public void QuitGame()
     {
