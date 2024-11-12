@@ -8072,7 +8072,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionSound: {fileID: 8300000, guid: 02294314464c89f468e7308572834cb5, type: 3}
-  additionalSound: {fileID: 8300000, guid: a739510bc5ed9e54ca0f91c6f0e7f98f, type: 3}
+  additionalSound: {fileID: 0}
 --- !u!4 &327707957
 Transform:
   m_ObjectHideFlags: 0
