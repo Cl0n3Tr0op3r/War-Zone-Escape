@@ -1046,6 +1046,7 @@ GameObject:
   - component: {fileID: 34410053}
   - component: {fileID: 34410052}
   - component: {fileID: 34410051}
+  - component: {fileID: 34410056}
   m_Layer: 0
   m_Name: '[stand -_00001] (imported)-stand -_00001.png'
   m_TagString: Untagged
@@ -1157,10 +1158,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.625
-  m_Height: 6.95
+  m_Radius: 3.68
+  m_Height: 15.05
   m_Direction: 1
-  m_Center: {x: 0, y: -0.00000047683716, z: 0.0000038146973}
+  m_Center: {x: -0.24, y: -0.2, z: 0.0000038146973}
 --- !u!212 &34410055
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1213,6 +1214,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &34410056
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 34410049}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a293db2d12e75e4439fa28bcab9fb246, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &37554854
 PrefabInstance:
   m_ObjectHideFlags: 0
