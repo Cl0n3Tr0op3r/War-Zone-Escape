@@ -7377,6 +7377,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0c627c51a78d004cb3497a861d9e7a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  checkPoints: []
+  vectorPoint: {x: 0, y: 0, z: 0}
+  dead: 0
 --- !u!1001 &148676250
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30424,6 +30428,52 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 342870062}
   m_SourcePrefab: {fileID: 100100000, guid: eda2ecc8d5c8a6c45b00163c6ff912b4, type: 3}
+--- !u!1 &610646800
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 610646802}
+  - component: {fileID: 610646801}
+  m_Layer: 0
+  m_Name: SceneManagement
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &610646801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610646800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b46717623a512c642bf76134d471556a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spaceKeySceneName: Main Game
+  escapeKeySceneName: Title Screen
+--- !u!4 &610646802
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610646800}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -177.89775, y: 15.66381, z: -38.750107}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &611994642 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: eda2ecc8d5c8a6c45b00163c6ff912b4,
@@ -56490,7 +56540,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundEffect: {fileID: 8300000, guid: a77b8e8e3badc0e4189f33aadfeaafcc, type: 3}
-  sceneToLoad: End Cutscene
+  sceneToLoad: TrueEnd
 --- !u!82 &1192591444
 AudioSource:
   m_ObjectHideFlags: 0
@@ -102768,3 +102818,4 @@ SceneRoots:
   - {fileID: 2099601800}
   - {fileID: 869977338}
   - {fileID: 721344204}
+  - {fileID: 610646802}
