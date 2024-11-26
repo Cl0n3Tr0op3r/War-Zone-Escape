@@ -1703,7 +1703,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e01df8d7f886cc488db0f34eccc077e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 4.4
   groundDist: 1.38
   terrainLayer:
     serializedVersion: 2
