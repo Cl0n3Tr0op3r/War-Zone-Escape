@@ -11,52 +11,52 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TrueStart.unity
     guid: f29a63e25cb914435ae03d7e4770ea61
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Start Cutscene.unity
     guid: aad66bfe7ec623f409d6d3a775535c6f
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Object1.unity
     guid: 7207aba867e1445eb8254c9438a18324
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Object2.unity
     guid: f3efdb7637cd1466c8981ead070197af
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Object3.unity
     guid: b6fbdd71f984f463395c433bee547916
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Object4.unity
     guid: f74c8922a0a844d46a0da33db7e087b9
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Tut.unity
     guid: 6708f1d79311e4801a69ebaf5de2179e
   - enabled: 1
     path: Assets/Scenes/Main Game.unity
     guid: 829f51c0b7c3afc468ec6994a5308308
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TrueEnd.unity
     guid: 18aa571b58d344a9aaad8e997ab8b950
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/End Cutscene.unity
     guid: f42bc9e052c310b42a621e0f5cdc3c45
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/stats1.unity
     guid: 62e18c5e0d2264b7c8d0affd059ed2e8
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/stats2.unity
     guid: 9791938fff5ff45a9883ef40503940bd
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/stats3.unity
     guid: 571d435c44c0f43fb85413f1be305790
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/stats4.unity
     guid: 68817bb8cd864418e9c02a8e40d28b9f
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/stats5.unity
     guid: af9b9c5333eae455b97010ef0ef6d8b5
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/stats6.unity
     guid: 2766522ae12354a0b8048a2bf3e99825
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/credits.unity
     guid: ed1fcb80f3597488eba15c6ded15e9b0
   - enabled: 0
