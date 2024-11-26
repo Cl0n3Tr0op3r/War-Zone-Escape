@@ -1,45 +1,38 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class CutsceneManagement : MonoBehaviour
 {
+    [Header("Scene Transition Settings")]
+
+    [Tooltip("Name of the scene to load when the Space key is pressed.")]
+    public string spaceKeySceneName = "Start Cutscene";
+
+    [Tooltip("Name of the scene to load when the Escape key is pressed.")]
+    public string escapeKeySceneName = "TitleScene";
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            LoadCutscene();
+            LoadScene(spaceKeySceneName);
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            LoadTitle();
+            LoadScene(escapeKeySceneName);
         }
     }
 
-    public void LoadCutscene()
+    /// <summary>
+    /// Loads the specified scene.
+    /// </summary>
+    /// <param name="sceneName">Name of the scene to load.</param>
+    private void LoadScene(string sceneName)
     {
-        string sceneName = "Start Cutscene";
-        if (Application.CanStreamedLevelBeLoaded(sceneName))
+        if (!string.IsNullOrEmpty(sceneName))
         {
             SceneManager.LoadScene(sceneName);
-        }
-        else
-        {
-            Debug.LogError($"Scene '{sceneName}' cannot be loaded. Please check the scene name and ensure it is added to the Build Settings.");
-        }
-    }
-    public void LoadTitle()
-    {
-        string sceneName = "Start Cutscene";
-        if (Application.CanStreamedLevelBeLoaded(sceneName))
-        {
-            SceneManager.LoadScene(sceneName);
-        }
-        else
-        {
-            Debug.LogError($"Scene '{sceneName}' cannot be loaded. Please check the scene name and ensure it is added to the Build Settings.");
         }
     }
 }

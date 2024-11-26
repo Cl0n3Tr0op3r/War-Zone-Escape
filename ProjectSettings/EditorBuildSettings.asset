@@ -8,10 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Title Screen.unity
     guid: 755134ef1fb60b148a97e183480bb8a0
-  - enabled: 0
-    path: Assets/Scenes/Tut.unity
-    guid: 6708f1d79311e4801a69ebaf5de2179e
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TrueStart.unity
     guid: f29a63e25cb914435ae03d7e4770ea61
   - enabled: 1
@@ -29,6 +26,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Object4.unity
     guid: f74c8922a0a844d46a0da33db7e087b9
+  - enabled: 0
+    path: Assets/Scenes/Tut.unity
+    guid: 6708f1d79311e4801a69ebaf5de2179e
   - enabled: 1
     path: Assets/Scenes/Main Game.unity
     guid: 829f51c0b7c3afc468ec6994a5308308
